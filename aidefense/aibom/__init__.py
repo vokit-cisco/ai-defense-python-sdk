@@ -1,4 +1,4 @@
-# Copyright 2025 Cisco Systems, Inc. and its affiliates
+# Copyright 2026 Cisco Systems, Inc. and its affiliates
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,4 +14,20 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-version = "2.1.1"
+from .aibom_client import AiBomClient
+from .aibom_base import AiBom
+from .models import (
+    CreateAnalysisRequest,
+    CreateAnalysisResponse,
+    GetBomSummaryResponse,
+    ListBomComponentsRequest,
+    ListBomComponentsResponse,
+    ListBomsRequest,
+    ListBomsResponse,
+    BomDetail,
+)
+
+__all__ = [
+    "AiBomClient",
+    "AiBom",
+]
